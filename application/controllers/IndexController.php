@@ -2,8 +2,12 @@
 
 class IndexController extends Zend_Controller_Action
 {
-
-    public function init()
+	public function preDispatch()
+	{
+		/* preDispatch */
+	}
+	
+	public function init()
     {
         /* Initialize action controller here */
     }
