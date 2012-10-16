@@ -16,6 +16,10 @@ class IndexController extends Zend_Controller_Action
     {
         $this->view->testMessage = 'Index-Controller, Index-Action';
         // action body
+        
+    	$this->view->message = 'Hallo World!';
+    	
+    
     }
 
 
