@@ -1,0 +1,33 @@
+<?php echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?php
+echo $this->headTitle();
+echo $this->headMeta();
+echo $this->headStyle();
+
+//-- Externes Stylesheet einbinden
+echo $this->headLink()->appendStylesheet($this->baseUrl() .'/css/styles.css');
+echo $this->headScript();
+?>
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+		<h1><?php echo $this->escape($this->title); ?></h1>
+		</div>
+		
+		<div id="content">
+			<?php
+			//-- Hauptseite einbinden
+			echo $this->layout()->content;
+			?>
+		</div>
+	</div>
+	<div id="footer">
+		GitTest|Dev To Master
+	</div>
+</body>
+</html>
+
+
